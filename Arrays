@@ -102,8 +102,9 @@ public class seven {
 		System.out.println(Character.toUpperCase(c1));
 	}
 }
-[1:57 PM, 5/10/2021] Sankeerthi Ganni ✨: package loops;
 
+10)
+ package loops;
 public class ten {
 
 	public static void main(String[] args) {
