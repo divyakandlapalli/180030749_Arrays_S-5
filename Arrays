@@ -1,0 +1,578 @@
+
+1)
+package loops;
+import java.util.*;
+public class First {
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int a=sc.nextInt();
+	    if(a>0){
+	        System.out.println("Positive");
+	    }
+	    else if(a==0)
+	    {
+	        System.out.println("Zero");
+	    }
+	    else
+	    {
+	        System.out.println("Negative");
+	    }
+	
+	}
+}
+
+11)
+
+package loops;
+
+public class eleven {
+
+	public static void main(String args[]) {
+		for(int i=23; i<57; i++) {
+			if(i%2==0) {
+				System.out.println(i);
+			}
+		}
+	}
+
+}
+
+2)
+package loops;
+import java.util.*;
+public class second {
+public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int a=sc.nextInt();
+	    if(a%2==0){
+	        System.out.println("even");
+	    }
+	    else
+	    {
+	        System.out.println("Odd");
+	    }
+	
+	}
+}
+
+8)
+package loops;
+import java.util.Scanner;
+public class eight {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		char c1 = sc.next().charAt(0);
+		switch(c1) {
+		case('R'):
+			System.out.println("Red");
+		  break;
+		case('G'):
+			System.out.println("Green");
+		  break;
+		case('B'):
+			System.out.println("Blue");
+		  break;
+		case('O'):
+			System.out.println("Orange");
+		  break;
+		case('Y'):
+			System.out.println("Yellow");
+		  break;
+		case('W'):
+			System.out.println("White");
+		  break; 
+		  default:
+			  System.out.println("Invalid code");
+		}
+			
+
+	}
+
+}
+
+7)
+import java.util.Scanner;
+public class seven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		char c1 = sc.next().charAt(0);
+		System.out.println(Character.toUpperCase(c1));
+	}
+}
+[1:57 PM, 5/10/2021] Sankeerthi Ganni ✨: package loops;
+
+public class ten {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i=1;i<=10;i++)
+		{
+			System.out.print(i+"        ");
+		}
+
+	}
+
+}
+
+12)
+
+import java.util.Scanner;
+
+public class tweleve {
+
+	 public static void main(String args[]){    
+		  int i,m=0,flag=0;
+		  Scanner sc=new Scanner(System.in);
+		    int n=sc.nextInt(); 
+		  m=n/2;      
+		  if(n==0||n==1){  
+		   System.out.println(n+" is not prime number");      
+		  }else{  
+		   for(i=2;i<=m;i++){      
+		    if(n%i==0){      
+		     System.out.println(n+" is not prime number");      
+		     flag=1;      
+		     break;      
+		    }      
+		   }      
+		   if(flag==0)  { 
+			   System.out.println(n+" is prime number");
+			   }  
+		  } 
+		}  
+
+}
+
+13)
+
+public class thirteen {
+
+	 public static void main(String[] args) {
+		 int low = 10, high = 99;
+            while (low < high) {
+	            boolean flag = false;
+	            for(int i = 2; i <= low/2; ++i) {
+	                if(low % i == 0) {
+	                    flag = true;
+	                    break;
+	                }
+	            }
+	            if (!flag && low != 0 && low != 1)
+	                System.out.print(low + " ");
+	            ++low;
+	        }
+	    }
+}
+
+15)
+import java.util.Scanner;
+public class fifteen {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int s=0;
+		while(n>0)
+		{
+			int k=n%10;
+			s=s+k;
+			n=n/10;
+		}
+		System.out.println(s);
+	}
+
+}
+
+9)
+import java.util.Scanner;
+public class nine {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		switch (n) {
+
+        case 1:
+        	System.out.println("January");
+        	break;
+         case 2:
+        		System.out.println("February");
+        		break;
+       	case 3:
+       		System.out.println("March");
+       		break;
+
+        case 4:
+        	System.out.println("April");
+        	break;
+
+        case 5:
+        	System.out.println("May");
+
+              break;
+
+        case 6:
+
+              System.out.println("June");
+
+              break;
+
+        case 7:
+
+              System.out.println("July");
+
+              break;
+
+        case 8:
+
+     …
+
+20)
+import java.util.Scanner;
+public class twenty {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		int s=0;
+		float av=0;
+		for(int i=0;i<n;i++)
+		{
+			s=s+a[i];
+		}
+		av=s/n;
+		System.out.println("Sum is"+s+"Avg is"+av);
+		
+	}
+
+}
+
+17)
+import java.util.Scanner;
+public class seventeen {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int rev=0;
+		while(n > 0)   
+		{  
+		int r = n % 10;  
+		rev =rev * 10 + r;  
+		n = n/10;  
+		}  
+		System.out.println(rev);
+
+	}
+}
+
+21)
+import java.util.Arrays;
+import java.util.Scanner;
+public class twentyone {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		Arrays.sort(a);
+		System.out.println("Min"+a[0]+"Max"+a[n-1]);
+
+	}
+
+}
+
+18)
+import java.util.Scanner;
+public class eighteen {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int rev=0;
+		int ori=n;
+		while(n > 0)   
+		{  
+		int r = n % 10;  
+		rev =rev * 10 + r;  
+		n = n/10;  
+		}  
+		if(rev==ori)
+		System.out.println("Palindrome");
+		else
+		{
+			System.out.println("Not a Palindrome");
+		}
+
+	}
+
+}
+
+16)
+import java.util.Scanner;
+
+public class sixteen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		for ( int i = 1 ; i <=n ; i++ )
+	       {
+	           for ( int j = 1 ; j <= i ; j++ )
+	           {
+	                System.out.print("*");
+	                
+	           }
+	           //For new line
+	           System.out.println();
+	       }
+
+	}
+
+}
+
+22)
+import java.util.Scanner;
+public class twentytwo {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int k=sc.nextInt();
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		int c=0;
+		for(int i=0;i<n;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		for(int i=0;i<n;i++)
+		{
+			if(a[i]==k)
+			{
+				System.out.println("Found at index"+i);
+				c=1;
+				break;
+			}
+			else
+			{
+				c=0;
+			}
+		}
+		if(c==0)
+		{
+			System.out.println(-1);
+		}
+	}
+
+}
+
+23)
+import java.util.Scanner;
+public class twentythree {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		int a[]= {65,67,69,70,71};
+		int n=a.length;
+		
+		char c;
+		for(int i=0;i<n;i++)
+		{
+			int k=a[i];
+			c=(char)k;
+			System.out.println(k+"  "+c);
+		}
+		
+	}
+
+}
+
+6)
+import java.util.Scanner;
+public class six {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int age=sc.nextInt();
+		String gender=sc.next();
+		if((age>=1 && age<=58) &&(gender.equals("Female")))
+		{
+			System.out.println("percentage of interest is 8.2%.");
+		}
+		else if((age>=59 && age<=100) &&(gender.equals("Female")))
+		{
+			System.out.println("percentage of interest is 9.2%.");
+		}
+		else if((age>=1 && age<=58) &&(gender.equals("Male")))
+		{
+			System.out.println("percentage of interest is 8.4%.");
+		}
+		else if((age>=59 && age<=100) &&(gender.equals("Male")))
+		{
+			System.out.println("percentage of interest is 10.5%.");
+		}
+		
+	}
+}
+
+26)
+import java.util.Scanner;
+public class twentysix {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		int b[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.arraycopy(a,0,b,0,a.length);
+		for(int i=0;i<n;i++)
+		{
+			System.out.print(b[i]);
+		}
+		
+
+}
+}
+
+25)
+import java.util.Arrays;
+import java.util.Scanner;
+public class twentyfive {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		Arrays.sort(a);
+		for(int i=0;i<n;i++)
+		{
+			System.out.println(a[i]);
+		}
+}
+}
+
+4)
+import java.util.Scanner;
+public class four {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		char c1 = sc.next().charAt(0);
+		char c2 = sc.next().charAt(0);
+		if(c1<c2)
+		{
+			System.out.println(c1+", "+c2);
+		}
+		else
+		{
+			System.out.println(c2+", "+c1);
+		}
+	}
+}
+
+24)
+import java.util.Arrays;
+import java.util.Scanner;
+public class twentyfour {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		Arrays.sort(a);
+		System.out.println("1st two Min"+a[0]+" "+a[1]);
+		System.out.println(" two Max"+a[n-1]+" "+a[n-2]);
+
+	}
+
+}
+
+14)
+import java.util.*;
+public class fourteen {
+public static void main(String args[])
+	{
+		System.out.println("Please enter an integer number ");
+		int num,c=1;
+		Scanner sc=new Scanner(System.in);
+		num=sc.nextInt();
+		if(num==0)
+			c=0;
+		boolean flag = false;
+	    for (int i = 2; i <= num / 2; ++i) {
+	      if (num % i == 0) {
+	        flag = true;
+	        break;
+	      }
+	    }
+	    
+	    if(c==0)
+	    	System.out.println("0 is neither prime nor composite.");
+	    else if (!flag)
+	      System.out.println(num + " is a prime number.");
+	    else
+	      System.out.println(num + " is not a prime number.");
+		
+		sc.close();
+	}
+
+}
+
+5) import java.util.Scanner;
+  public class five {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		char c1 = sc.next().charAt(0);
+		if((c1>=65 && c1<=90)||(c1>=97 && c1<=122))
+		{
+			System.out.println("Alphabet");
+		}
+		else if((c1>=48 && c1<=57))
+		{
+			System.out.println("Number");
+		}
+		else
+		{
+			System.out.println("Special charecter");
+		}
+			
+
+	}
+
+}
